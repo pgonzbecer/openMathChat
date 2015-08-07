@@ -11,8 +11,6 @@ Steps:
 
 
 Here is a meteor.com deploy:  This one is a bit old.
-
      1. A sample:  http://openmathcommunity1.meteor.com/ 
-      
      2. Telescope Docs:  https://telescope.readme.io/docs
     
