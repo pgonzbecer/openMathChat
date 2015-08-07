@@ -1,12 +1,14 @@
-# openMathCommunity
-Telescope Custom Instance Folders
+# openMathChat
+Custom Telescope Instance
+
+**Only modify the Packages>>Custom folder.**
 
 Steps:
-  1. Download Telescope and unzip it.
-  2. Download openMathCommunity custom folders and place them in the Telescope root.
-  3. At the root in the command line $meteor run
+  1. Download this repository.
+  2. ??
+  3. ??
 
-I do not know how to make a package yet.
 
-Here is a meteor.com deploy:
-    http://openmathcommunity1.meteor.com/
+
+Here is a meteor.com deploy:  Soon
+    
