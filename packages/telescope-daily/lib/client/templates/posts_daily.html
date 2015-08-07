@@ -1,0 +1,11 @@
+<template name="posts_daily">
+  <div class="posts-daily">
+    {{#each days}}
+      {{> before_day}}
+      {{> day_heading date=date}}
+      {{> posts_list_controller context}}
+      {{> after_day}}
+    {{/each}}
+    {{> load_more_days}}
+  </div>
+</template>

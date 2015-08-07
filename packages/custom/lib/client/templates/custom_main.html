@@ -1,0 +1,19 @@
+﻿<head>
+    <title>Loading...</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <link id="rss-link" rel="alternate" type="application/rss+xml" title="New Posts" href="/feed.xml" />
+
+    <!-- Custom: Adding MathJax from CDN here-->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        var mathJaxUpdate = function () {
+            //typeset the whole darn page
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+            //TODO: typeset a given div based on this functions argument
+            //MathJax.Hub.Queue(["Typeset",MathJax.Hub,"MathExample"]);
+        }
+    </script>
+    <!-- End MathJax Code-->
+</head>
