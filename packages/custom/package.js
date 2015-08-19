@@ -31,6 +31,8 @@ Package.onUse(function (api) {
     api.addFiles([
       'lib/client/templates/hello.html',
       'lib/client/templates/hello.js',
+	  "lib/client/templates/custom_post_body.html",
+	  "lib/client/templates/custom_post_body.js",
       'lib/client/templates/custom_post_title.html',
       'lib/client/templates/custom_post_title.js',
       'lib/client/stylesheets/custom.scss',
