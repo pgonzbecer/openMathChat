@@ -24,7 +24,7 @@ Package.onUse(function (api) {
       'lib/custom_fields.js',
       'lib/template_modules.js',
       'lib/callbacks.js',
-      'lib/custom_posts_view.js'
+      'lib/custom_posts_menu.js'
     ], ['client', 'server']);
 
     // client
