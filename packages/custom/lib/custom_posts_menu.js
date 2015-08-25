@@ -10,6 +10,11 @@ Template.menuItems.replace("viewsMenu", [
     route: "posts_new",
     label:  "new",
     description:  "newest_posts"
+  },
+  {
+    route: "posts_closed",
+    label: "closed",
+    description:  "closed_posts"
   }
 ]);
 
