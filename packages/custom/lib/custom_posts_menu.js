@@ -18,16 +18,18 @@ Template.menuItems.replace("viewsMenu", [
   }
 ]);
 
-Posts.schema.closed:  {
+Posts.schema.closed=  {
   type: Boolean,
   optional: false
-}
+};
+
+Posts.attachSchema(Posts.schema);
 
 Posts.view.add("closed", function(args)
 {
   return {
     options: {sort: {sticky: -1, closed: true}}
   }
-})
+});
 
 // End of File
