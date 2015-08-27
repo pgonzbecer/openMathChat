@@ -2,21 +2,23 @@
   {{#if canComment}}
     <div class="comment-form comment-new module">
       <h4 class="comment-new-heading">{{_ "add_comment"}}</h4>
-      <fieldset class="af-defaultFieldGroup">
-        <div class="form-group" data-required="true">
-          <label for="Fd8vdNy58KEkJAqBv" class="control-label">Body</label>
+      <form id="submitCommentForm" class="form-horizontal" novalidate="novalidate">
+        <fieldset class="af-defaultFieldGroup">
+          <div class="form-group" data-required="true">
+            <label for="Fd8vdNy58KEkJAqBv" class="control-label">Body</label>
+            <div class="controls">
+              <textarea rows="5" name="body" id="Fd8vdNy58KEkJAqBv" required="" data-schema-key="body" maxlength="3000" class="form-control"></textarea>
+              <span class="help-block"></span>
+            </div>
+          </div>
+        </fieldset>
+        <div class="form-group">
+          <div></div>
           <div class="controls">
-            <textarea rows="5" name="body" id="Fd8vdNy58KEkJAqBv" required="" data-schema-key="body" maxlength="3000" class="form-control"></textarea>
-            <span class="help-block"></span>
+            <button type="submit" class="btn btn-primary">Submit</button>
           </div>
         </div>
-      </fieldset>
-      <div class="form-group">
-        <div></div>
-        <div class="controls">
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
-      </div>
+      </form>
     </div>
   {{else}}
     {{#if isLoggedIn}}
