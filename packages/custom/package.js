@@ -40,7 +40,8 @@ Package.onUse(function (api) {
       'lib/client/templates/custom_main.html',
       'lib/client/templates/eduFooter.html',
       'lib/client/templates/eduFooter.js',
-      'lib/custom_posts_menu.js'
+      'lib/custom_posts_menu.js',
+      'lib/client/templates/custom_posts_comments.html'
     ], ['client']);
 
     // server
