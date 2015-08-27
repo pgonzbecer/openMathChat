@@ -23,8 +23,7 @@ Package.onUse(function (api) {
     api.addFiles([
       'lib/custom_fields.js',
       'lib/template_modules.js',
-      'lib/callbacks.js',
-      'lib/custom_posts_menu.js'
+      'lib/callbacks.js'
     ], ['client', 'server']);
 
     // client
@@ -40,7 +39,8 @@ Package.onUse(function (api) {
       'lib/client/custom_templates.js',
       'lib/client/templates/custom_main.html',
       'lib/client/templates/eduFooter.html',
-      'lib/client/templates/eduFooter.js'
+      'lib/client/templates/eduFooter.js',
+      'lib/custom_posts_menu.js'
     ], ['client']);
 
     // server
