@@ -1,0 +1,28 @@
+<template name="comment_submit">
+  {{#if canComment}}
+    <div class="comment-form comment-new module">
+      <h4 class="comment-new-heading">{{_ "add_comment"}}</h4>
+      <fieldset class="af-defaultFieldGroup">
+        <div class="form-group" data-required="true">
+          <label for="Fd8vdNy58KEkJAqBv" class="control-label">Body</label>
+          <div class="controls">
+            <textarea rows="5" name="body" id="Fd8vdNy58KEkJAqBv" required="" data-schema-key="body" maxlength="3000" class="form-control"></textarea>
+            <span class="help-block"></span>
+          </div>
+        </div>
+      </fieldset>
+      <div class="form-group">
+        <div></div>
+        <div class="controls">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  {{else}}
+    {{#if isLoggedIn}}
+      <p class="cannot-comment-message">{{_ "sorry_you_do_not_have_the_rights_to_comments"}}</p>
+    {{else}}
+      <p class="cannot-comment-message"><a href="{{pathFor route='atSignIn'}}">{{_ "please_log_in_to_comment"}}</a></p>
+    {{/if}}
+  {{/if}}  
+</template>
