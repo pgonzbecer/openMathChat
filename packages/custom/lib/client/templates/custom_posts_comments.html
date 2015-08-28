@@ -1,4 +1,5 @@
 <template name="custom_comment_submit">
+	{{update}}
   {{#if canComment}}
     <div class="comment-form comment-new module">
       <h4 class="comment-new-heading">{{_ "add_comment"}}</h4>
@@ -15,7 +16,7 @@
         <div class="form-group">
           <div></div>
           <div class="controls">
-            <button class="btn btn-primary" id="closePost">Close Post</button>
+            <button type="button" class="btn btn-primary" id="closePost" onclick="{{closePost}}">Close Post</button>&emsp;&emsp;
             <button type="submit" class="btn btn-primary">Submit</button>
           </div>
         </div>

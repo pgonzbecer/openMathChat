@@ -31,6 +31,8 @@ Package.onUse(function (api) {
     api.addFiles([
       'lib/client/templates/hello.html',
       'lib/client/templates/hello.js',
+      'lib/client/templates/custom_posts_comments.html',
+      'lib/client/templates/custom_posts_comments.js',
 	  "lib/client/templates/custom_post_body.html",
 	  "lib/client/templates/custom_post_body.js",
       'lib/client/templates/custom_post_title.html',
@@ -40,8 +42,7 @@ Package.onUse(function (api) {
       'lib/client/templates/custom_main.html',
       'lib/client/templates/eduFooter.html',
       'lib/client/templates/eduFooter.js',
-      'lib/custom_posts_menu.js',
-      'lib/client/templates/custom_posts_comments.html'
+      'lib/custom_posts_menu.js'
     ], ['client']);
 
     // server
